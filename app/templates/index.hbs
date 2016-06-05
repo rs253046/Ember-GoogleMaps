@@ -1,0 +1,11 @@
+<div>
+   {{#each model as |person index|}}
+      <div>
+        {{person.name}} | {{person.address}} | <button type="button" {{action "transit" person.address}}>Click Me!</button>
+      </div>
+   {{/each}}
+
+</div>
+
+
+
